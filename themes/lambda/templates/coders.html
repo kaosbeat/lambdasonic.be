@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+
+{% block content_title %}
+<h2 class="code-block">coders</h2>
+{% endblock %}
+
+<ol id="post-list">
+{% for article in articles %}
+  {% if article.category == 'coders' %}
+    <li>
+      <div class="cyber-tile-big fg-dark bg-cyan">
+        <img src="{{ SITEURL }}/images/{{article.image}}" />
+        <label>{{article.title}}</label>
+      </div>
+    </li>
+  {%endif%}
+{% endfor %}
+</ol><!-- /#posts-list -->
+
+</section><!-- /#content -->
+{% endblock  %}
+

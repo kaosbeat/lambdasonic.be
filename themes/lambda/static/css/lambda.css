@@ -1,0 +1,32 @@
+.menu {
+		font-size: 2ch;
+		overflow: auto;
+		/* line-height: 10px; */
+		margin: 0 auto 0 auto;
+		padding: 5px;
+		text-align: center;
+		max-width: 800px;
+		
+}
+
+.menu > ul {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: 'VT323';
+    display: flex;
+}
+
+
+.pad10 {
+	padding: 10px;
+}
+
+.marg10{
+	margin: 10px;
+}
+
+#content {
+background: none;
+
+}

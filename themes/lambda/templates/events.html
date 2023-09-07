@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+{% block content_title %}
+<h2>All articles</h2>
+<h1  class="pwd">visitor@{{SITENAME}}/events:$</h1>
+
+{% endblock %}
+<ol id="post-list">
+{% for article in articles %}
+  {% if article.category == 'events' %}
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+        </article></li>
+        {%endif%}
+{% endfor %}
+</ol><!-- /#posts-list -->
+
+</section><!-- /#content -->
+{% endblock content %}
