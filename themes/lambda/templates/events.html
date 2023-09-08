@@ -2,10 +2,10 @@
 {% block content %}
 <section id="content">
 {% block content_title %}
-<h1  class="pwd">visitor@{{SITENAME}}/events:$ ls</h1>
+<h1  class="pwd  ">visitor@{{SITENAME}}/events:$ ls <span class="cyber-glitch-3">|</span></h1>
 
 {% endblock %}
-<ol id="post-list">
+<ul id="eventlist">
 {% for article in articles %}
   {% if article.category == 'events' %}
         <li><article class="hentry">
@@ -14,7 +14,7 @@
         </article></li>
         {%endif%}
 {% endfor %}
-</ol><!-- /#posts-list -->
+</ul><!-- /#posts-list -->
 
 </section><!-- /#content -->
 {% endblock content %}

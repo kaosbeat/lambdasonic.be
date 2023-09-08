@@ -30,3 +30,77 @@
 background: none;
 
 }
+
+.menubutton {
+	margin: 15px;
+}
+
+.px100 {
+	height: 100px;
+}
+
+.px50 {
+	height: 100px;
+}
+
+.coderimg {
+	width: 100%;
+	
+}
+
+#coderslist {
+		display: grid;
+		grid-template-columns: repeat(3, 33%);
+		column-gap: 5px;
+		list-style: none;
+	}
+	  /* Use a media query to add a breakpoint at 800px: */
+	  @media screen and (max-width: 800px) {
+		#coderslist{
+		   grid-template-columns: repeat(2, 50%);
+		}
+}
+
+#eventlist {
+	list-style: none;
+
+}
+
+.coderitem {
+	float: left;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.indeximg {
+	/* change .itemline borderwidth accordingly */
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 7px;
+	/* change .itemline borderwidth accordingly */
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  --tile-width: 95%;
+  --tile-edges: 35px;
+  }
+.indeximg img{
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+
+}
+
+.artimg {
+	margin: 0 auto;
+}
+
+.cyber-tile-full {
+	--tile-width: 95%;
+	--tile-edges: 10px;
+	margin: 0 auto;
+
+}

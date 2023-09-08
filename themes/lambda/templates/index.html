@@ -2,8 +2,16 @@
 {% block content %}
 <section id="content">
 {% block content_title %}
-<h2>All articles</h2>
+<h2 class="cyber-h">Welcome</h2>
 {% endblock %}
+
+{% for page in pages %}
+    {% if page.category == 'about' %}
+        {{ page.content }}
+    {% endif %}
+{% endfor %}
+</dl>
+
 
 </section><!-- /#content -->
 {% endblock content %}

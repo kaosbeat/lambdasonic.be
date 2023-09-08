@@ -6,8 +6,9 @@
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/cyberpunk.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+
 
 
         {% endblock head %}
@@ -19,29 +20,32 @@
             <a href="{{ SITEURL }}/">
               <div class="marg10 bg-blue fg-yellow  cyber-tile-big cyber-glitch-1">
                 <h1 class="pad10 cyber-h">λ-sonic</h1>
-                
               </div>
             </a>
         </header>
         <nav class="menu">
           <ul>
           {% for title, link in MENUITEMS %}
-              <li><a href="{{ link }}">{{ title }}</a></li>
+              <li class="menubutton cyber-button bg-green fg-white"><span class="tag">R25</span><a href="{{ link }}" class="menubutton">{{ title }}</a></li>
               
           {% endfor %}
         </ul>
       </nav>
-        <main>
+        <main class="bg-red fg-white cyber-razor-bottom p-2 fixed-bottom">
         {% block content %}
         {% endblock %}
         </main>
+        <div class="px50">
+
+        </div>
+
         <footer>
-          <div class="code-block fg-yellow bg-cyan">
+          <div class="code-block fg-yellow">
                lambdasonic 2023 - 
                <h2>livecoding Belgian algoraves since 2014</h2>
           </div>
         </footer>
-        <div id="footer" class="bg-black fg-white cyber-razor-top p-2 fixed-bottom">
+        <div id="footer" >
         </div>
 </body>
 </html>
