@@ -27,11 +27,10 @@
 
   <div class="artimg cyber-tile-big fg-dark bg-cyan cyber-glitch-0 ">
     <img class="coderimg" src="{{ SITEURL }}/images/{{article.image}}" />
-    <label>Text content</label>
+    <label>{{article.title}}</label>
   </div>
 
-  <div>test</div>
-  <footer class="post-info">
+  <!-- <footer class="post-info">
     <time class="published" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
@@ -51,17 +50,20 @@
     <div class="category">
         Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
     </div>
-    {% endif %}
-    {% if article.tags %}
+    {% endif %} -->
+
+    <!-- {% if article.tags %}
     <div class="tags">
         Tags:
         {% for tag in article.tags %}
             <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
         {% endfor %}
     </div>
-    {% endif %}
+    {% endif %} -->
   </footer><!-- /.post-info -->
+  <div class="pad10">
   <article>
     {{ article.content }}
   </article>
+</div>
 {% endblock %}

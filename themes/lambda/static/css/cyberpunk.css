@@ -447,10 +447,17 @@ body
 /*#region glitches*/
 
 /*description: good for images. Effect of a dying flickering screen. Sometimes bright, sometimes dark.*/
+
+:root {
+    --animation-time: 2s; 
+  }
+
+
 .cyber-glitch-0
 {
-    animation: cyber-glitch-0 5s linear infinite;
+    animation: cyber-glitch-0 var(--animation-time) linear infinite;
 }
+
 
 
 @keyframes cyber-glitch-0
@@ -588,7 +595,7 @@ body
 .cyber-tile-big img
 {
     width: 100%;
-    height: auto;
+    height: 100%; /*adapted from auto */
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% var(--tile-edges), calc(100% - var(--tile-edges)) 0);
 }
 
@@ -619,6 +626,7 @@ body
 {
     --tile-width: 480px;
     --tile-edges: 26px;
+    
 }
 
 /*#endregion*/

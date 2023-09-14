@@ -27,9 +27,9 @@ CONFIG = {
     'deploy_path': SETTINGS['OUTPUT_PATH'],
     # Remote server configuration
     'ssh_user': 'kaos',
-    'ssh_host': 'kaos.ashrae.be',
+    'ssh_host': '161.35.88.215',
     'ssh_port': '22',
-    'ssh_path': '/home/sites/www.lambdasonic.be/',
+    'ssh_path': '/home/sites/www.kaotec.org',
     # Host and port for `serve`
     'host': 'localhost',
     'port': 8000,

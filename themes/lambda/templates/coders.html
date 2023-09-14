@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="content">
+  <h1  class="pwd  ">visitor@{{SITENAME}}/coders:$ ls <span class="cyber-glitch-3">|</span></h1>
 
 {% block content_title %}
 <h2 class="cyber-h">Coders</h2>
@@ -17,7 +18,7 @@
 {% for article in articles %}
   {% if article.category == 'coders' %}
     <li class="coderitem">
-      <a href="{{article.url}}">
+      <a href="{{ SITEURL }}/{{article.url}}">
         <div class="indeximg cyber-tile-small fg-dark bg-blue">
           <img src="{{ SITEURL }}/images/{{article.image}}" />
           <label>{{article.title}}</label>

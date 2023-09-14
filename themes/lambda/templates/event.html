@@ -22,6 +22,7 @@
 {% endblock %}
 
 {% block content %}
+  <div class="pad10">
   <header>
     <h1 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
@@ -30,41 +31,23 @@
  {{ translations.translations_for(article) }}
   </header>
 
+  <article>
+    {{ article.content }}
+  </article>
 
-
-
-  <div>test</div>
-  <footer class="post-info">
+  <footer class="eventfooter fg-dark">
     <time class="published" datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
-    {% if article.modified %}
-    <time class="modified" datetime="{{ article.modified.isoformat() }}">
-      {{ article.locale_modified }}
-    </time>
-    {% endif %}
-    {% if article.authors %}
-    <address class="vcard author">
-      By {% for author in article.authors %}
-          <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-        {% endfor %}
-    </address>
-    {% endif %}
-    {% if article.category %}
-    <div class="category">
-        Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-    </div>
-    {% endif %}
+
     {% if article.tags %}
     <div class="tags">
         Tags:
         {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="fg-yellow">{{ tag }}</a>
         {% endfor %}
     </div>
     {% endif %}
   </footer><!-- /.post-info -->
-  <article>
-    {{ article.content }}
-  </article>
+</div>
 {% endblock %}

@@ -1,5 +1,6 @@
 AUTHOR = 'lambdasonic'
 SITENAME = 'lambdasonic'
+# SITEURL = 'https://www.kaotec.org/www.lambdasonic.be'
 SITEURL = ''
 THEME = 'themes/lambda'
 PATH = 'content'
