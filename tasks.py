@@ -29,7 +29,7 @@ CONFIG = {
     'ssh_user': 'kaos',
     'ssh_host': '161.35.88.215',
     'ssh_port': '22',
-    'ssh_path': '/home/sites/www.kaotec.org',
+    'ssh_path': '/home/sites/www.kaotec.org/www.lambdasonic.be',
     # Host and port for `serve`
     'host': 'localhost',
     'port': 8000,
@@ -129,6 +129,7 @@ def livereload(c):
 @task
 def publish(c):
     """Publish to production via rsync"""
+    print("hellooo")
     pelican_run('-s {settings_publish}'.format(**CONFIG))
     c.run(
         'rsync --delete --exclude ".DS_Store" -pthrvz -c '

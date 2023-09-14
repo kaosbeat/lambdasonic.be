@@ -10,9 +10,9 @@
 <ul id="eventlist">
 {% for article in articles %}
   {% if article.category == 'events' %}
-        <li class="event bg-green fg-dark  cyber-razor-top">
-                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                        <article>
+        <li class="pad10 event bg-green fg-dark  cyber-razor-top">
+                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" >
+                        <article class="eventitem">
                         <footer class="post-info">
                                 <time class="published" datetime="{{ article.date.isoformat() }}">
                                 {{ article.locale_date }}

@@ -4,6 +4,15 @@
 {% block content_title %}
 <h2 class="cyber-h">Welcome</h2>
 {% endblock %}
+<h1  class="pwd  ">visitor@{{SITENAME}}/:$ motd <span class="cyber-glitch-3">|</span></h1>
+
+{% for page in pages %}
+    {% if page.category == 'motd' %}
+        {{ page.content }}
+    {% endif %}
+{% endfor %}
+
+<h2 class="cyber-h">about</h2>
 
 {% for page in pages %}
     {% if page.category == 'about' %}

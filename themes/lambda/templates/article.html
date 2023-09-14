@@ -19,6 +19,9 @@
 {% endblock %}
 
 {% block content %}
+<div class="pad10">
+<h1  class="pwd  ">visitor@{{SITENAME}}/coders/{{article.title}}:$ ls <span class="cyber-glitch-3">|</span></h1>
+
   <header>
     <h1 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
@@ -62,8 +65,9 @@
     {% endif %} -->
   </footer><!-- /.post-info -->
   <div class="pad10">
-  <article>
-    {{ article.content }}
-  </article>
+    <article>
+      {{ article.content }}
+    </article>
+  </div>
 </div>
 {% endblock %}

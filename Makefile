@@ -8,10 +8,10 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=kaos.ashrae.be
+SSH_HOST=161.35.88.215
 SSH_PORT=22
 SSH_USER=kaos
-SSH_TARGET_DIR=/home/sites/www.lambdasonic.be/
+SSH_TARGET_DIR=/home/sites/www.kaotec.org/www.lambdasonic.be/
 
 
 DEBUG ?= 0
