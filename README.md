@@ -27,3 +27,4 @@ sounds harder than it is, more info
 5. edit the event, make sure to change the metadata on top of the file, especially use a unique title and slug
 6. upload images with the correct filename to /content/images, make sure there is at least one image with the same name is the image: metadata field
 7. notify the lambdasonic maintainer, who will deploy the changes
+![flowgithub](https://github.com/kaosbeat/lambdasonic.be/assets/204628/826b4685-720f-464c-98e4-1adb62853a29)
