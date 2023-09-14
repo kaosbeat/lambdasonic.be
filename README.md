@@ -7,7 +7,7 @@ not at all ready
 need a file + image per coder in /content/coders as per template
 need a file per event in /content/events 
 
-## howto contribute content
+## howto contribute content using a pull request
 
 fork this repo, make a change, commit it, maka a pull request  
 sounds harder than it is, more info 
