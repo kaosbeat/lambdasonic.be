@@ -17,3 +17,13 @@ sounds harder than it is, more info
 - Allow edits from maintainers.
 - send a message to the lambdasonic maintainer so they know they have to merge something
 
+## directly contribute content (without a fork, requires repo access)
+
+### to add an event
+1. got to the /content/events directory
+2. select the event you want to use as a template
+3. copy text the code view
+4. add a new file, name your file *title.md* remember where title must be unique and the same as the title in the  metadata from the next step
+5. edit the event, make sure to change the metadata on top of the file, especially use a unique title and slug
+6. upload images with the correct filename to /content/images, make sure there is at least one image with the same name is the image: metadata field
+7. notify the lambdasonic maintainer, who will deploy the changes
