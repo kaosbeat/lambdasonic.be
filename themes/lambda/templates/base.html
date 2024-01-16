@@ -56,7 +56,7 @@
         <nav class="menu">
           <ul>
           {% for title, link in MENUITEMS %}
-              <li class="menubutton cyber-button bg-green fg-white"><span class="tag">R25</span><a href="{{ SITEURL }}{{ link }}" class="menubutton">{{ title }}</a></li>  
+            <li><a href="{{ SITEURL }}{{ link }}" class="menubutton"><div class="menubutton cyber-button bg-green fg-white"><span class="tag">R25</span>{{ title }}</div></a></li>  
           {% endfor %}
         </ul>
       </nav>

@@ -162,6 +162,10 @@ background: none;
   }
 
 
-.event {
-  
+.big {
+  font-size: 10em;
+}
+
+.menubutton {
+	color: var(--red) !important;
 }
