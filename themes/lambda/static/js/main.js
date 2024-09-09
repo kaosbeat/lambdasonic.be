@@ -11,6 +11,9 @@ $(function() {
         $(this).addClass(classname);
         // document.getElementById('someElementId').className = 'cyberglitcher'+i;
     });
+    var $x = $("#coderslist li");
+        Array.prototype.sort.call($x, function() { return Math.random() < 0.5; });
+        $x.each(function(i, li) { $("#coderslist").append(li); });
     $('.eventitem').each(function(i, obj) {
         var style = document.createElement('style');
         style.type = 'text/css';
