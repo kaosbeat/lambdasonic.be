@@ -1,4 +1,4 @@
-Title: TYPpO
+Title: TyPpO
 Date: 2023-07-09
 Category: coders
 Tags: sonicpi, algorave
