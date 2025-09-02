@@ -7,6 +7,7 @@ PATH = 'content'
 PAGES_PATH = ['pages' ]
 TIMEZONE = 'Europe/Rome'
 ARTICLES_PATH = ['events', 'coders']
+STATIC_PATHS = ['files']
 DEFAULT_LANG = 'en'
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
