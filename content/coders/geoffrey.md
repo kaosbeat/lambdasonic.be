@@ -19,9 +19,9 @@ converge in uncharted territory from dancing techno to abstract ambiant.
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen>
 </iframe>
-<h3>Live coding performance  at Wintercircus - Gent (BE) on December 5, 2024</h3>
 </div>
 </div>
+### Live coding performance  at Wintercircus - Gent (BE) on December 5, 2024
 <div class='auto-resizable-iframe'>
 <div class="cyber-tile-big cyber-tile-vid fg-dark bg-blue">
 <iframe
@@ -31,9 +31,9 @@ converge in uncharted territory from dancing techno to abstract ambiant.
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen>
 </iframe>
-<h3>Live coding performance  at Wintercircus - Gent (BE) on September 7, 2024.</h3>
 </div>
 </div>
+### Live coding performance  at Wintercircus - Gent (BE) on September 7, 2024.
 
 <h2><a href="https://geoffreyfiorese.com/"> https://geoffreyfiorese.com/</a></h2>
 
