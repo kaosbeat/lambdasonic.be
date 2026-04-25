@@ -5,13 +5,13 @@ Slug: about
 Template: page
 Tags: 
 
-# upcoming events
-
+<!-- # upcoming events -->
+<!-- 
 <a href="/events/frigo/">
     <div class="cyber-tile-big cyber-tile-vid fg-dark bg-blue">
         <img src="../../../images/20250906_clubfrigo.jpg" />
     </div>
-</a>
+</a> -->
 
 
 # here is us playing at museumnacht 2024 in Ghent
